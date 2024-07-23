@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/myTicketCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/myETicketPlaceNameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="naziv"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/myETicketPlaceAddressTextView"
+                    android:text="Adresa"
+                    android:textSize="17dp"
+                    android:paddingLeft="10dp"
+                    android:gravity="left|center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/myETicketDateTimeTextView"
+                    android:text="Datum i vreme"
+                    android:textSize="17dp"
+                    android:paddingLeft="10dp"
+                    android:gravity="left|center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/myeTicketStatusTextView"
+                    android:text="Status tiketa"
+                    android:textSize="17dp"
+                    android:paddingLeft="10dp"
+                    android:gravity="left|center"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/liveQueueButton"
+                    android:text="Prati uzivo red cekanja"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"/>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:src="@drawable/arrow_icon"
+                android:layout_gravity="right|center"
+                app:tint="@color/soft_red_500" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="NEMA TIKETA"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "992664854437",
+    "project_id": "qmsappauth",
+    "storage_bucket": "qmsappauth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992664854437:android:a18fefe3520d1b86d9d24c",
+        "android_client_info": {
+          "package_name": "com.example.qmsapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp-wGJVLs8EAUkvR9MCwFjRaa-viwJxLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

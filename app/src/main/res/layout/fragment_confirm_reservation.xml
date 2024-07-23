@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ConfirmReservationFragment">
+
+    <androidx.cardview.widget.CardView
+        android:padding="30dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/light_grey"
+        android:background="@drawable/button_with_border"
+        app:cardCornerRadius="15dp"
+        >
+        <LinearLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rezervacija"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textStyle="bold"
+
+            />
+        <TextView
+            android:id="@+id/reservationConfirmationServiceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="Usluga : "
+            />
+            <TextView
+                android:id="@+id/reservationConfirmationDateTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="Datum : "/>
+            <TextView
+                android:id="@+id/reservationConfirmationTimeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="Termin : "/>
+
+            <Button
+                android:id="@+id/confirmReservationButton"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="potvrdi rezervaciju"
+                android:layout_gravity="center"
+                />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

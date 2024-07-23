@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AccountFragment"
+    android:orientation="vertical"
+    android:background="@color/off_white">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Ime i prezime"
+            android:textSize="20dp"
+            android:id="@+id/accountName"
+            android:textStyle="bold"
+            android:gravity="left|center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="email"
+            android:textSize="18dp"
+            android:id="@+id/accountEmail"
+            android:gravity="left|center"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Promena imena"
+                android:textSize="20dp"
+                android:id="@+id/accountNameChange"
+                android:drawableLeft="@drawable/person_icon"
+                android:drawableTint="@color/soft_red_700"
+                android:drawablePadding="4dp"
+                android:drawableRight="@drawable/arrow_icon"
+                android:gravity="left|center"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Promena lozinke"
+                android:textSize="20dp"
+                android:id="@+id/accountPasswordChange"
+                android:drawableLeft="@drawable/password_icon"
+                android:drawablePadding="4dp"
+                android:drawableRight="@drawable/arrow_icon"
+                android:drawableTint="@color/soft_red_700"
+                android:gravity="left|center"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Kako koristiti aplikaciju"
+                android:textSize="20dp"
+                android:id="@+id/accountHowToUseApp"
+                android:drawableLeft="@drawable/help_icon"
+                android:drawableTint="@color/soft_red_700"
+                android:drawablePadding="4dp"
+                android:drawableRight="@drawable/arrow_icon"
+                android:gravity="left|center"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="@color/soft_red_700"
+                android:text="Odjava"
+                android:textSize="20dp"
+                android:id="@+id/accountLogOut"
+                android:drawableLeft="@drawable/logout_icon"
+                android:drawablePadding="4dp"
+                android:drawableTint="@color/soft_red_700"
+                android:gravity="left|center"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Brisanje profila"
+                android:textSize="20dp"
+                android:textColor="@color/soft_red_700"
+                android:id="@+id/accountDelete"
+                android:drawableLeft="@drawable/delete_icon"
+                android:drawablePadding="4dp"
+                android:drawableTint="@color/soft_red_700"
+                android:gravity="left|center"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

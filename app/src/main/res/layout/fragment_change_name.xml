@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ChangeNameFragment"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Unesite vase ime i prezime"
+        android:textSize="25dp"
+        android:gravity="center"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border"
+        android:textSize="17dp"
+        android:layout_margin="20dp"
+        android:inputType="text"
+        android:id="@+id/nameEditText"
+        android:textColor="@color/grey"
+        android:padding="10dp"
+        android:textColorHint="@color/hintTextColor"
+        android:hint="Unesite ime"/>
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Sacuvaj"
+        android:id="@+id/buttonSaveName"/>
+
+</LinearLayout>

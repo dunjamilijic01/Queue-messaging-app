@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reservation_nav_graph"
+    app:startDestination="@id/reserveFragment">
+
+    <fragment
+        android:id="@+id/reserveFragment"
+        android:name="com.example.qmsapp.ReserveFragment"
+        android:label="fragment_reserve"
+        tools:layout="@layout/fragment_reserve" >
+        <action
+            android:id="@+id/action_reserveFragment_to_ETicketFragment"
+            app:destination="@id/ETicketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmationScreenFragment"
+        android:name="com.example.qmsapp.ConfirmationScreenFragment"
+        android:label="fragment_confirmation_screen"
+        tools:layout="@layout/fragment_confirmation_screen" />
+    <fragment
+        android:id="@+id/ETicketFragment"
+        android:name="com.example.qmsapp.ETicketFragment"
+        android:label="fragment_e_ticket"
+        tools:layout="@layout/fragment_e_ticket" >
+        <action
+            android:id="@+id/action_ETicketFragment_to_confirmationScreenFragment"
+            app:destination="@id/confirmationScreenFragment" />
+    </fragment>
+</navigation>

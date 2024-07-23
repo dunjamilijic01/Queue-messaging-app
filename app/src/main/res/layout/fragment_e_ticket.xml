@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ETicketFragment" android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/eTicketCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <LinearLayout
+            android:padding="50dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/eTiketLocationNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="Naziv lokacije"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/eTicketServiceNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="NAZIV USLUGE"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                />
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:outlineSpotShadowColor="@color/black"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="13dp"
+                >
+                <TextView
+                    android:background="@drawable/black_border"
+                    android:padding="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="70dp"
+                    android:text="A000"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:id="@+id/eTicketLabelTextView"
+                    />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiket izdat za : "
+                android:id="@+id/eTicketDateTextView"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Broj klijenata ispred vas: "
+                android:id="@+id/eTicketQueueSizeTextView"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="info"
+                android:gravity="center"
+                android:layout_marginTop="30dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="preuzmi tiket"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textSize="10sp"
+            android:id="@+id/buttonDownlaodTicket"
+            />
+        <Button
+            android:layout_marginLeft="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="nastavi bez preuzimanja"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:id="@+id/nextButton"
+            android:textSize="10sp"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

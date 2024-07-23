@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:orientation="vertical">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/categoriesListView"
+        android:divider="@color/design_default_color_on_primary"/>
+    <TextView
+        android:id="@+id/noCategoriesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEMA KATEGORIJA"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:visibility="gone"/>
+</LinearLayout>

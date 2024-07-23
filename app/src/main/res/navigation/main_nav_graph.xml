@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.qmsapp.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_myTicketsFragment2"
+            app:destination="@id/myTicketsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.qmsapp.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_accountFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_changeNameFragment"
+            app:destination="@id/changeNameFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.qmsapp.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_categoryFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_categoryFragment_to_placeFragment"
+            app:destination="@id/placeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/placeFragment"
+        android:name="com.example.qmsapp.PlaceFragment"
+        android:label="fragment_place"
+        tools:layout="@layout/fragment_place" >
+        <action
+            android:id="@+id/action_placeFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allTicketsFragment"
+        android:name="com.example.qmsapp.AllTicketsFragment"
+        android:label="fragment_all_tickets"
+        tools:layout="@layout/fragment_all_tickets" >
+        <action
+            android:id="@+id/action_allTicketsFragment_to_myTicketPreviewFragment"
+            app:destination="@id/myTicketPreviewFragment" />
+        <action
+            android:id="@+id/action_allTicketsFragment_to_myTicketsFragment"
+            app:destination="@id/myTicketsFragment" />
+        <action
+            android:id="@+id/action_allTicketsFragment_to_liveQueueFragment"
+            app:destination="@id/liveQueueFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reservedTicketsFragment"
+        android:name="com.example.qmsapp.ReservedTicketsFragment"
+        android:label="fragment_reserved_tickets"
+        tools:layout="@layout/fragment_reserved_tickets" >
+        <action
+            android:id="@+id/action_reservedTicketsFragment_to_myTicketPreviewFragment"
+            app:destination="@id/myTicketPreviewFragment" />
+        <action
+            android:id="@+id/action_reservedTicketsFragment_to_myTicketsFragment"
+            app:destination="@id/myTicketsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/queuedTicketsFragment"
+        android:name="com.example.qmsapp.QueuedTicketsFragment"
+        android:label="fragment_queued_tickets"
+        tools:layout="@layout/fragment_queued_tickets" >
+        <action
+            android:id="@+id/action_queuedTicketsFragment_to_myTicketPreviewFragment"
+            app:destination="@id/myTicketPreviewFragment" />
+        <action
+            android:id="@+id/action_queuedTicketsFragment_to_myTicketsFragment"
+            app:destination="@id/myTicketsFragment" />
+        <action
+            android:id="@+id/action_queuedTicketsFragment_to_liveQueueFragment"
+            app:destination="@id/liveQueueFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myTicketsFragment"
+        android:name="com.example.qmsapp.MyTicketsFragment"
+        android:label="fragment_my_tickets"
+        tools:layout="@layout/fragment_my_tickets" >
+        <action
+            android:id="@+id/action_myTicketsFragment_to_allTicketsFragment"
+            app:destination="@id/allTicketsFragment" />
+        <action
+            android:id="@+id/action_myTicketsFragment_to_reservedTicketsFragment"
+            app:destination="@id/reservedTicketsFragment" />
+        <action
+            android:id="@+id/action_myTicketsFragment_to_queuedTicketsFragment"
+            app:destination="@id/queuedTicketsFragment" />
+        <action
+            android:id="@+id/action_myTicketsFragment_to_mtTicketsOnMap"
+            app:destination="@id/mtTicketsOnMap" />
+    </fragment>
+    <fragment
+        android:id="@+id/changeNameFragment"
+        android:name="com.example.qmsapp.ChangeNameFragment"
+        android:label="fragment_change_name"
+        tools:layout="@layout/fragment_change_name" >
+        <action
+            android:id="@+id/action_changeNameFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.example.qmsapp.ChangePasswordFragment"
+        android:label="ChangePasswordFragment" >
+        <action
+            android:id="@+id/action_changePasswordFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ETicketFragment3"
+        android:name="com.example.qmsapp.ETicketFragment"
+        android:label="fragment_my_ticket_preview"
+        tools:layout="@layout/fragment_my_ticket_preview" />
+    <fragment
+        android:id="@+id/myTicketPreviewFragment"
+        android:name="com.example.qmsapp.MyTicketPreviewFragment"
+        android:label="MyTicketPreviewFragment" >
+        <action
+            android:id="@+id/action_myTicketPreviewFragment_to_allTicketsFragment"
+            app:destination="@id/allTicketsFragment" />
+        <action
+            android:id="@+id/action_myTicketPreviewFragment_to_reservedTicketsFragment"
+            app:destination="@id/reservedTicketsFragment" />
+        <action
+            android:id="@+id/action_myTicketPreviewFragment_to_queuedTicketsFragment"
+            app:destination="@id/queuedTicketsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/liveQueueFragment"
+        android:name="com.example.qmsapp.LiveQueueFragment"
+        android:label="fragment_live_queue"
+        tools:layout="@layout/fragment_live_queue" >
+        <action
+            android:id="@+id/action_liveQueueFragment_to_queuedTicketsFragment"
+            app:destination="@id/queuedTicketsFragment" />
+        <action
+            android:id="@+id/action_liveQueueFragment_to_allTicketsFragment"
+            app:destination="@id/allTicketsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mtTicketsOnMap"
+        android:name="com.example.qmsapp.MtTicketsOnMap"
+        android:label="fragment_mt_tickets_on_map"
+        tools:layout="@layout/fragment_mt_tickets_on_map" >
+        <action
+            android:id="@+id/action_mtTicketsOnMap_to_myTicketsFragment"
+            app:destination="@id/myTicketsFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/listViewItem"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/serviceNameTextView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="NAZIV USLUGE"
+            android:textSize="22dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:padding="5dp"
+            />
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:orientation="horizontal"
+           android:layout_gravity="right"
+           android:gravity="right"
+           >
+           <TextView
+               android:id="@+id/averageWaitingForService"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text=""
+               android:textSize="22dp"
+               android:textColor="@color/soft_red_700"
+               android:layout_gravity="center"/>
+           <ImageView
+               android:layout_width="28dp"
+               android:layout_height="28dp"
+               android:src="@drawable/timer_icon"
+               android:layout_gravity="center"
+               app:tint="@color/soft_red_700"
+               android:layout_marginLeft="4dp"/>
+       </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/servicesCardView"
+        android:visibility="gone"
+        android:outlineAmbientShadowColor="@color/light_grey">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            style="@style/buttonStateChangeStyle"
+            android:id="@+id/buttonGetInLine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="STANI U RED"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+        <Button
+            android:id="@+id/buttonReserve"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ZAKAZI TERMIN"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            style="@style/buttonStateChangeStyle"/>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
